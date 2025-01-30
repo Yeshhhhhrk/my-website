@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications - Yeshaswini Radhakrishnan</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="animated-header">
         <h1>Publications</h1>
         <nav>
             <ul>
@@ -22,7 +23,14 @@
         </nav>
     </header>
     
-    <section>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Explore My Research & Contributions</h2>
+            <p>Discover my research in bioinformatics, computational genomics, and molecular biology.</p>
+        </div>
+    </section>
+    
+    <section class="publications animated-section">
         <h2>Research Publications</h2>
         <ul>
             <li><a href="https://link-to-paper1.com" target="_blank">Lactobacillus Planatareum: A Comprehensive Review</a></li>
@@ -31,7 +39,7 @@
         </ul>
     </section>
     
-    <section>
+    <section class="presentations animated-section">
         <h2>Conference Presentations</h2>
         <ul>
             <li><a href="https://link-to-presentation1.com" target="_blank">IAC’22 Paris, Presentation 1</a></li>
@@ -42,5 +50,9 @@
     <footer>
         <p>&copy; 2025 Yeshaswini Radhakrishnan | All Rights Reserved</p>
     </footer>
+    
+    <script>
+        ScrollReveal().reveal('.animated-section', { delay: 200, distance: '50px', origin: 'bottom', duration: 1000 });
+    </script>
 </body>
 </html>
