@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff8c00, #ff0080);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff8c00;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background: #ff8c00;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+/* Research & Projects Cards */
+.research-item, .project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.research-item:hover, .project-item:hover {
+    transform: scale(1.05);
+}
+
+/* Links Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
