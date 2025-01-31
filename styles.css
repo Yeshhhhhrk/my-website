@@ -1,63 +1,100 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
+    background-color: #E0F7FA; /* Pastel turquoise */
+    color: #2C3E50; /* Darker text for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif; /* Modern clean font */
     margin: 0;
     padding: 0;
 }
 
-/* Header */
-header {
-    background: #000000;
-    color: #ffffff;
-    padding: 40px;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-/* Navigation Bar */
-nav {
-    background: #333;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
+.container {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: row;
+    flex: 1;
 }
 
-nav ul li a {
-    color: #ffffff;
+/* Sidebar Styles */
+.sidebar {
+    background-color: #B2EBF2; /* Lighter pastel turquoise */
+    padding: 20px;
+    width: 220px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.sidebar ul li a {
     text-decoration: none;
+    color: #00796B;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #004D40;
+}
+
+/* Main Content */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-left: 240px;
+}
+
+/* Profile Section */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #00796B;
+}
+
+.name {
+    font-size: 36px;
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #ff8c00;
+.description {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Sections */
-section {
-    padding: 40px;
-    border-bottom: 1px solid #ccc;
-}
-
-h2 {
-    color: #333;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
-    background: #000;
-    color: #fff;
-    padding: 15px;
+    background-color: #00796B;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
