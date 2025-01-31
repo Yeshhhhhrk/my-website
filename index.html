@@ -5,27 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeshaswini Radhakrishnan</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Yeshaswini Radhakrishnan</h1>
-        <img src="your-image.jpg" alt="Yeshaswini Radhakrishnan" class="profile-pic">
-        <p>Hi! I'm Yeshaswini, a passionate bioinformatics researcher blending computational genomics with molecular biology to unlock breakthroughs in personalized medicine. Welcome to my portfolio!</p>
-        <nav>
+    <div class="container">
+        <nav class="sidebar">
+            <h2 class="logo">yeshu.</h2>
             <ul>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="publications.html">Publications</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="extracurriculars.html">Extracurriculars</a></li>
+                <li><a href="cv.html">CV</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+        
+        <main class="content">
+            <div class="profile">
+                <img src="images/your-photo.jpg" alt="Yeshaswini Radhakrishnan" class="profile-pic">
+                <p class="intro">Hello I'm</p>
+                <h1 class="name">Yeshaswini Radhakrishnan</h1>
+                <p class="description">
+                    I am a passionate bioinformatics researcher blending computational genomics with molecular biology
+                    to unlock breakthroughs in personalized medicine.
+                </p>
+                <p class="description">
+                    Currently pursuing my MS in Bioinformatics at Northeastern University, I specialize in
+                    genomics, machine learning applications in biology, and computational drug discovery.
+                </p>
+                <a href="#about" class="btn">More About Me →</a>
+            </div>
+        </main>
+    </div>
     
     <footer>
         <p>&copy; 2025 Yeshaswini Radhakrishnan | All Rights Reserved</p>
     </footer>
+    
+    <script>
+        ScrollReveal().reveal('.profile', { delay: 200, distance: '50px', origin: 'bottom', duration: 1000 });
+    </script>
 </body>
 </html>
