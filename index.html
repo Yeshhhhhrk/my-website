@@ -14,35 +14,34 @@
             $('.sidebar a').click(function(event) {
                 event.preventDefault();
                 let target = $(this).attr('href');
-                $('.content-section:visible').fadeOut(300, function() {
-                    $(target).fadeIn(300);
-                });
+                $('.content-section').hide();
+                $(target).fadeIn(300);
             });
         });
     </script>
     <style>
         .content-section {
-            padding: 80px 50px;
-            max-width: 1400px;
+            padding: 50px 50px;
+            max-width: 1200px;
             margin: 0 auto;
             text-align: left;
         }
         h1 {
-            font-size: 40px;
-            margin-bottom: 40px;
+            font-size: 36px;
+            margin-bottom: 30px;
             text-align: center;
             text-transform: uppercase;
             color: black;
         }
         h2 {
-            font-size: 30px;
-            margin-top: 40px;
+            font-size: 28px;
+            margin-top: 30px;
             text-align: center;
             color: black;
         }
         p {
-            font-size: 20px;
-            line-height: 1.8;
+            font-size: 18px;
+            line-height: 1.6;
             text-align: justify;
         }
     </style>
@@ -73,9 +72,6 @@
                         I am a dedicated bioinformatics researcher specializing in computational genomics, molecular biology, and AI-driven biomedical discoveries.
                         My expertise spans genomic data analysis, precision medicine, and the integration of AI in biological research. With a strong foundation in wet and dry lab techniques,
                         I focus on understanding complex biological systems, developing novel bioinformatics pipelines, and enhancing personalized healthcare through computational models.
-                        My passion for bioinformatics has led me to work on high-impact research in protein structure analysis, biomarker identification, and evolutionary genomics.
-                        I am also an advocate for interdisciplinary collaboration, integrating biotechnology, programming, and clinical research to push the frontiers of biomedical advancements.
-                        My goal is to contribute to pioneering discoveries that transform the future of medicine and healthcare.
                     </p>
                 </div>
             </section>
@@ -85,15 +81,45 @@
                 <h2>Master of Science in Bioinformatics</h2>
                 <p><strong>Northeastern University, Boston, MA</strong> | GPA: 4.0 | Expected: 2026</p>
                 <p>Comprehensive coursework in computational genomics, structural bioinformatics, and advanced data-driven biological research.</p>
-                <p>Developed expertise in machine learning applications in genomics, next-generation sequencing analysis, and computational modeling for drug discovery.</p>
-                <p>Conducting independent research in pediatric neuroblastoma biomarker identification using high-throughput omics data.</p>
-                <p>Actively involved in collaborations with computational biology labs to enhance precision medicine techniques and novel therapeutic strategies.</p>
                 <h2>Bachelor of Engineering in Biotechnology</h2>
                 <p><strong>RV College of Engineering, Bangalore, India</strong> | GPA: 3.8 | Best Outgoing Student</p>
                 <p>Extensive research on proteomics, genetic regulation, and computational drug discovery through interdisciplinary projects.</p>
-                <p>Developed a novel framework for analyzing secondary metabolites in medicinal plants, contributing to pharmacogenomic databases.</p>
-                <p>Led a team investigating novel drug targets using molecular docking and machine learning approaches for rare genetic disorders.</p>
-                <p>Completed a high-impact thesis focused on structural insights into drug-receptor interactions using advanced bioinformatics tools.</p>
+            </section>
+            
+            <section id="experience" class="content-section">
+                <h1>Experience</h1>
+                <h2>Research Assistant - Ondrechen Research Group</h2>
+                <p>Developing computational models for protein structural conformations and biomarker discovery.</p>
+                <h2>Omnichannel Intern - Eli Lilly and Company</h2>
+                <p>Conducted pharmaceutical data analysis to optimize drug strategy in commercial trials.</p>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h1>Projects</h1>
+                <p>Led multiple research projects in computational genomics, single-cell analysis, and drug discovery.</p>
+                <p>Developed a PCOS detection kit integrating computational and experimental validation techniques.</p>
+                <p>Worked on NASA-aligned space microbiology payload projects focusing on microbial viability in extreme environments.</p>
+            </section>
+            
+            <section id="publications" class="content-section">
+                <h1>Publications</h1>
+                <p>Published articles in high-impact journals focusing on genomic medicine, computational biology, and cancer research.</p>
+                <p>Researched the effects of long-term spaceflight on astronaut physiology, presenting findings at international conferences.</p>
+                <p>Developed a nanoparticle-based drug delivery system for targeting tumor microenvironments.</p>
+            </section>
+            
+            <section id="skills" class="content-section">
+                <h1>Skills</h1>
+                <p>Proficient in bioinformatics tools, programming languages (Python, R), machine learning, and computational genomics.</p>
+                <p>Advanced experience with molecular docking, protein-ligand interaction studies, and genome annotation.</p>
+                <p>Expertise in high-throughput sequencing analysis and visualization using cutting-edge bioinformatics platforms.</p>
+            </section>
+            
+            <section id="extracurriculars" class="content-section">
+                <h1>Extracurriculars</h1>
+                <p>Active in leadership roles, classical dance, and social service initiatives.</p>
+                <p>Professional Bharatanatyam dancer representing BU Dheem in national dance competitions.</p>
+                <p>Volleyball athlete competing in inter-university tournaments with a strong passion for team-based sports.</p>
             </section>
             
             <section id="resume" class="content-section">
