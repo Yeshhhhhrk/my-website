@@ -6,6 +6,56 @@
     <title>Yeshaswini Radhakrishnan</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <style>
+        body {
+            background-color: #E0F7FA; /* Pastel turquoise */
+            color: #2C3E50; /* Darker text for contrast */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            background-color: #B2EBF2; /* Lighter pastel turquoise */
+            padding: 20px;
+            width: 250px;
+            min-height: 100vh;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00796B; /* Dark turquoise for buttons */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #00796B;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -13,26 +63,45 @@
             <h2 class="logo">yeshu.</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="extracurriculars.html">Extracurriculars</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
         <main class="content">
             <div class="profile">
-                <img src="images/your-photo.jpg" alt="Yeshaswini Radhakrishnan" class="profile-pic">
+                <img src="IMG_3028.jpeg" alt="Yeshaswini Radhakrishnan" class="profile-pic">
                 <p class="intro">Hello I'm</p>
                 <h1 class="name">Yeshaswini Radhakrishnan</h1>
                 <p class="description">
                     I am a passionate bioinformatics researcher blending computational genomics with molecular biology
-                    to unlock breakthroughs in personalized medicine.
+                    to unlock breakthroughs in personalized medicine. My expertise lies at the intersection of biology
+                    and computation, where I explore how algorithms and AI can be leveraged to understand complex biological systems.
                 </p>
                 <p class="description">
                     Currently pursuing my MS in Bioinformatics at Northeastern University, I specialize in
-                    genomics, machine learning applications in biology, and computational drug discovery.
+                    genomics, machine learning applications in biology, and computational drug discovery. My work revolves
+                    around analyzing large biological datasets, predicting disease-associated genetic variations, and developing
+                    computational models to accelerate therapeutic innovations.
                 </p>
-                <a href="#about" class="btn">More About Me →</a>
+                <p class="description">
+                    Previously, I have led projects focusing on protein structure prediction, immune system interactions,
+                    and novel biomarker discovery for cancer research. My passion for bioinformatics extends beyond academia,
+                    as I actively contribute to open-source scientific computing projects and collaborate with researchers
+                    globally to advance personalized medicine.
+                </p>
+                <p class="description">
+                    Beyond research, I am an avid advocate for interdisciplinary learning, blending biotechnology,
+                    computational sciences, and clinical research to push the frontiers of biomedical advancements.
+                    My journey is fueled by curiosity, innovation, and an unwavering drive to make a tangible impact
+                    in the field of precision medicine.
+                </p>
+                <a href="about.html" class="btn">More About Me →</a>
             </div>
         </main>
     </div>
