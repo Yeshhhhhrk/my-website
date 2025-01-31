@@ -36,10 +36,13 @@ body {
     padding: 0;
     text-align: center;
     width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .sidebar ul li {
-    padding: 15px;
     font-size: 18px;
 }
 
