@@ -13,16 +13,36 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            font-family: 'Poppins', sans-serif; /* Modern clean font */
         }
         .container {
             display: flex;
+            flex-direction: row;
             flex: 1;
         }
         .sidebar {
             background-color: #B2EBF2; /* Lighter pastel turquoise */
             padding: 20px;
-            width: 250px;
+            width: 220px;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            font-size: 18px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #00796B;
+            font-weight: bold;
         }
         .content {
             flex-grow: 1;
@@ -31,21 +51,23 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 50px;
         }
         .profile-pic {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
+            object-fit: cover;
             margin-bottom: 20px;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #00796B; /* Dark turquoise for buttons */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .description {
+            max-width: 800px;
+            font-size: 18px;
+            line-height: 1.6;
         }
         footer {
             background-color: #00796B;
@@ -76,7 +98,6 @@
         <main class="content">
             <div class="profile">
                 <img src="IMG_3028.jpeg" alt="Yeshaswini Radhakrishnan" class="profile-pic">
-                <p class="intro">Hello I'm</p>
                 <h1 class="name">Yeshaswini Radhakrishnan</h1>
                 <p class="description">
                     I am a passionate bioinformatics researcher blending computational genomics with molecular biology
@@ -101,7 +122,6 @@
                     My journey is fueled by curiosity, innovation, and an unwavering drive to make a tangible impact
                     in the field of precision medicine.
                 </p>
-                <a href="about.html" class="btn">More About Me →</a>
             </div>
         </main>
     </div>
